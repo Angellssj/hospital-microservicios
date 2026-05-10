@@ -27,6 +27,12 @@ public class PrescriptionController {
         return new ResponseEntity<>(newPrescription, HttpStatus.CREATED);
     }
 
+    //test
+    @GetMapping("/test")
+    public String test() {
+        return "Servicio Prescription funcionando";
+    }
+    
     // Obtener todas las recetas (útil para auditoría)
     @GetMapping
     public ResponseEntity<List<Prescription>> getAll() {

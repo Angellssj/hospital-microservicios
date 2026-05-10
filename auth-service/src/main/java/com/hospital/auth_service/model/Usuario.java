@@ -15,10 +15,10 @@ public class Usuario {
     @Column(nullable = false,unique = true,length = 100)
     private String password;
 
-    @Column(nullable = false,unique = true,length = 255)
+    @Column(nullable = true,unique = true,length = 255)
     private String email;
 
-    @Column(nullable = false)
+    @Column(nullable = true,unique = true,length = 100)
     private String rol;
 
     public Usuario() {
